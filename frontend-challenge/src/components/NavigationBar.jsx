@@ -15,7 +15,7 @@ export const NavigationBar = () => {
           key={idx}
           name={item.url}
           color="inherit"
-          onClick={() => onMenuButtonClick(data.url)}
+          onClick={() => onMenuButtonClick(item.url)}
         >
           {item.name}
         </Button>

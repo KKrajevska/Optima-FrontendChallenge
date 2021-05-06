@@ -15,7 +15,7 @@ const ROUTES = [
     component: CompanyStructure,
   },
   {
-    path: "carreer",
+    path: "careeer",
     component: Carreer,
   },
   {
