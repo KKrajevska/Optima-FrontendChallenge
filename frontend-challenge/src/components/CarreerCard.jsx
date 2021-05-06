@@ -7,14 +7,11 @@ import {
   Typography,
 } from "@material-ui/core";
 import React from "react";
-import image from "../assets";
 
 export const CarreerCard = () => {
-  console.log(image);
   return (
     <Card>
       <CardActions>
-        <CardMedia image={image} title="Lorem Ipsum" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             Lorem Ipsum
