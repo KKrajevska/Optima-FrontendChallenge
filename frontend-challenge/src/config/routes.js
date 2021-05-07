@@ -27,7 +27,7 @@ const ROUTES = [
     component: Services,
   },
   {
-    path: "contacts",
+    path: "contact",
     component: Contact,
   },
 ];
