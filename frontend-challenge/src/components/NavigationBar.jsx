@@ -5,7 +5,8 @@ import { Redirect, Route, Switch, useHistory } from "react-router-dom";
 import ROUTES from "../config/routes";
 export const NavigationBar = () => {
   const history = useHistory();
-  const onMenuButtonClick = (path) => {
+  const onMenuButtonClick = (path, name) => {
+    document.title = name;
     history.push(`/${path}`);
   };
   const buttons = data.menu.map((item, idx) => {
@@ -15,7 +16,7 @@ export const NavigationBar = () => {
           key={idx}
           name={item.url}
           color="inherit"
-          onClick={() => onMenuButtonClick(item.url)}
+          onClick={() => onMenuButtonClick(item.url, item.name)}
         >
           {item.name}
         </Button>

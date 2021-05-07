@@ -2,8 +2,12 @@ import "./App.css";
 import { AppThemeProvider } from "./context/theme";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { NavigationBar } from "./components/NavigationBar";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    document.title = "Products";
+  }, []);
   return (
     <AppThemeProvider>
       <BrowserRouter>

@@ -15,7 +15,7 @@ import { ArrowDropDown, ArrowDropUp } from "@material-ui/icons";
 
 const Products = () => {
   const [sortField, setSortField] = useState("title");
-  const [order, setOrder] = useState(-1);
+  const [order, setOrder] = useState(1);
   const headers = Object.keys(data.products[0]).map((item) => item);
   const SortArrow = ({ field, sortField, order }) => {
     const Icon =
